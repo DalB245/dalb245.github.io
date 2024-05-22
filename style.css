@@ -1,0 +1,93 @@
+body{
+    overflow:hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: white;
+    left: 0;
+    line-height: 200px;
+    margin-top: -125px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    background-color: black;
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  animation: stars 60s linear infinite;
+}
+
+#box1{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: black;
+}
+
+#icon-house{
+    color: white;
+    outline: white;
+    opacity: 50%;
+ position: absolute;
+ margin-bottom: 50%;
+ margin-right: 50%;
+ color: white;
+ text-align: center;
+ transform: translateY(-200px) translateX(-25px);
+ animation: SlideInTop 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+
+
+.icons_b{
+    filter: saturate(0) brightness(10) opacity(50%);
+}
+
+
+#icon-scratch{
+    position:absolute;
+    margin-left: 50%;
+    margin-bottom: 100%;
+    transform: translateX(-50px) translateY(-300px);
+    animation: SlideInBottom1 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+#icon-yt{
+    position:relative;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translateX(-10px) translateY(-357px);
+    animation: SlideInBottom2 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+
+
+.icons_b:hover{
+    opacity: 1;
+    filter: saturate(1);
+}
+#icon-house:hover{
+    opacity: 1;
+}
+
+@keyframes SlideInTop{
+    from{transform: translateY(-150px) translateX(-25px); opacity: 0%;}
+    to{transform: translateY(-200px) translateX(-25px); opacity: 50%;}
+}
+@keyframes SlideInBottom1{
+    from{transform: translateY(-340px) translateX(-50px) ; opacity: 0%;}
+    to{transform: translateY(-300px) translateX(-50px); opacity: 50%;}
+}
+@keyframes SlideInBottom2{
+    from{transform: translateY(-387px) translateX(-10px) ; opacity: 0%;}
+    to{transform: translateY(-357px) translateX(-10px); opacity: 50%;}
+}
+
+@keyframes stars {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -798px;
+    }
+}
