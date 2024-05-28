@@ -28,43 +28,36 @@ body{
     color: white;
     outline: white;
     opacity: 50%;
- position: absolute;
- margin-bottom: 50%;
- margin-right: 50%;
- color: white;
- text-align: center;
- transform: translateY(-200px) translateX(-25px);
- animation: SlideInTop 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+    position: absolute;
+    margin-bottom: 50%;
+    margin-right: 50%;
+    color: white;
+    text-align: center;
+    transform: translateY(-200px) translateX(-25px);
+    animation: SlideInTop 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+    transition: all 150ms ease-out;
 }
 
 
 
 .icons_b{
     filter: saturate(0) brightness(10) opacity(50%);
+    transition: all ease-out;
 }
 
 
-#icon-scratch{
-    position:absolute;
-    margin-left: 50%;
-    margin-bottom: 100%;
-    transform: translateX(-50px) translateY(-300px);
+#icons{
+    align-self: center;
+    width:auto;
+    transform: translateY(-350px);
     animation: SlideInBottom1 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: forwards;
 }
-
-#icon-yt{
-    position:relative;
-    margin-left: 50%;
-    margin-right: 50%;
-    transform: translateX(-10px) translateY(-357px);
-    animation: SlideInBottom2 0.5s cubic-bezier(0.33, 1, 0.68, 1);
-}
-
 
 
 .icons_b:hover{
     opacity: 1;
-    filter: saturate(1);
+    filter: saturate(1) brightness(1.4);
 }
 #icon-house:hover{
     opacity: 1;
@@ -75,12 +68,8 @@ body{
     to{transform: translateY(-200px) translateX(-25px); opacity: 50%;}
 }
 @keyframes SlideInBottom1{
-    from{transform: translateY(-340px) translateX(-50px) ; opacity: 0%;}
-    to{transform: translateY(-300px) translateX(-50px); opacity: 50%;}
-}
-@keyframes SlideInBottom2{
-    from{transform: translateY(-387px) translateX(-10px) ; opacity: 0%;}
-    to{transform: translateY(-357px) translateX(-10px); opacity: 50%;}
+    from{transform: translateY(-390px) ; opacity: 0%;}
+    to{transform: translateY(-350px) ; opacity: 80%;}
 }
 
 @keyframes stars {
